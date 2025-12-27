@@ -30,10 +30,16 @@ Drop your folders, reindex, and browse with clean tags, categories, and full met
 1) Install dependencies:
    - `npm install`
 
-2) Build services:
+2) Edit environment values:
+   - `.env.example` → `.env`
+
+3) Set up database (Postgres):
+   - `sudo ./scripts/setup_db.sh`
+
+4) Build services:
    - `npm run build`
 
-3) Start services (systemd):
+5) Start services (systemd):
    - `sudo ./scripts/setup_systemd.sh`
    Services created:
    - `frameview-api.service`
@@ -41,7 +47,7 @@ Drop your folders, reindex, and browse with clean tags, categories, and full met
    - `frameview-indexer.service`
    - `frameview-indexer.path`
 
-4) Open the UI:
+6) Open the UI:
    - `http://<your-host>:4173`
 
 ## Usage Notes

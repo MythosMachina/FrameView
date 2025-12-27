@@ -5,6 +5,5 @@ dist/
 .env.local
 .DS_Store
 images/
-services/db/
 logs/
 .vite/
