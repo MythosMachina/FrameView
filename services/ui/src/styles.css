@@ -30,3 +30,37 @@ body {
     radial-gradient(circle at 90% 30%, rgba(70, 192, 195, 0.12), transparent 35%);
   pointer-events: none;
 }
+
+.corner-hover {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 70;
+  display: grid;
+  gap: 6px;
+  justify-items: end;
+  font-family: "Space Mono", monospace;
+}
+.corner-hover-panel {
+  background: #10141a;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 10px 14px;
+  display: grid;
+  gap: 6px;
+  min-width: 200px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+.corner-hover-title {
+  color: #e6edf7;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+.corner-hover a {
+  color: #d58c3f;
+  font-size: 11px;
+  text-decoration: none;
+}
+.corner-hover a:hover {
+  text-decoration: underline;
+}

@@ -8,6 +8,7 @@ import SettingsView from "./components/SettingsView";
 import ImageDetailModal from "./components/ImageDetailModal";
 import ActiveTags from "./components/ActiveTags";
 import CategoriesBar from "./components/CategoriesBar";
+import CornerLinks from "./components/CornerLinks";
 
 const API_URL =
   import.meta.env.VITE_API_URL ?? `http://${window.location.hostname}:4010`;
@@ -287,6 +288,7 @@ export default function App() {
           }}
         />
       ) : null}
+      <CornerLinks />
     </div>
   );
 }
