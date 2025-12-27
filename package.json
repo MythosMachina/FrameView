@@ -1,0 +1,14 @@
+{
+  "name": "frameview",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run -w @frameview/shared build && npm run -w @frameview/api build && npm run -w @frameview/indexer build && npm run -w @frameview/ui build",
+    "dev:api": "npm run -w @frameview/api dev",
+    "dev:ui": "npm run -w @frameview/ui dev",
+    "dev:indexer": "npm run -w @frameview/indexer dev"
+  }
+}
