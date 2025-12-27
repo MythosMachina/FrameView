@@ -39,7 +39,7 @@ export default function SettingsPanel({
           <div className="mb-2 text-xs uppercase tracking-widest text-muted">Sources</div>
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <div className="text-sm text-text">/ai/FrameView/images</div>
+              <div className="text-sm text-text">Image root (configured)</div>
               <div className="text-xs text-muted">Last scan: on demand</div>
             </div>
             <div className="flex items-center gap-2 text-[10px] uppercase tracking-widest text-muted">

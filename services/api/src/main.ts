@@ -24,7 +24,7 @@ await app.register(cors, {
   origin: true,
 });
 
-const imageRoot = path.resolve(process.env.IMAGE_ROOT ?? "/ai/FrameView/images");
+const imageRoot = path.resolve(process.env.IMAGE_ROOT ?? "./images");
 
 app.get("/media/*", async (request, reply) => {
   const params = request.params as { "*": string };
